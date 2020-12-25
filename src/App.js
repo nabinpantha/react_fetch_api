@@ -1,9 +1,12 @@
 
 import './App.css';
 import './FetchUser'
-import FetchUser from "./FetchUser";
+
+import Routes from './Routes'
+import history from './history';
 
 function App() {
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -19,7 +22,9 @@ function App() {
         >
           Learn React
         </a>
-        <FetchUser/>
+        <Routes />
+        <button  onClick={() => history.push('/FetchUser')} target="_blank">Fetch Random User</button>
+       
       </header>
      
     </div>
